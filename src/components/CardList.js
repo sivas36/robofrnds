@@ -1,6 +1,9 @@
 import React from "react";
 import Card from "./Card.js";
-function CardList({ robots }) {
+const CardList = ({ robots }) => {
+  if (true) {
+    throw new Error("NOOOOOOOO!");
+  }
   return (
     <div>
       {robots.map((user, i) => {
@@ -15,5 +18,5 @@ function CardList({ robots }) {
       })}
     </div>
   );
-}
+};
 export default CardList;
